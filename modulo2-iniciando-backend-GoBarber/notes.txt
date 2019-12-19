@@ -1,0 +1,19 @@
+Sequelize:
+
+É um ORM, uma forma de abstrair o banco de dados, a forma como o
+banco funciona e a aplicacao se comunica com eles.
+
+Nao sendo preciso usar SQL para inserir um usuário em uma tabela,
+com o sequelize eu escrevo com javascript, assim eu posso trocar o banco
+sem precisar alterar comandos SQL.
+
+Dependencias para usar o postgres com o sequelize:
+"pg": "^7.14.0",
+"pg-hstore": "^2.3.3",
+
+1- yarn sequelize migration:create --name=create-users
+2- yarn sequelize db:migrate
+
+
+Gerar string única para o jwt:
+https://www.md5online.org/
